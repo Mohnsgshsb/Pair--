@@ -27,7 +27,7 @@ app.use(express.static(__dirname));
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pair.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.use('/pair', pairRouter);
